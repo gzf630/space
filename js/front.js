@@ -11,13 +11,17 @@ $(function () {
               	if(index==2){
               		$('.lined-compact').each(function(index,item){
               			$('.lined'+index).find('.percent').addClass('animations'+index)	
-//                       console.log()
               		})  
+              		$('.onepage-pagination li a').each((index,item)=>{
+              			 $(item).addClass('white')
+              		})
               	}else{
               		$('.lined-compact').each(function(index,item){
               			$('.lined'+index).find('.percent').removeClass('animations'+index)	
-//                       console.log()
-              		})  
+              		}) 
+              		$('.onepage-pagination li a').each((index,item)=>{
+              			 $(item).removeClass('white')
+              		})
               	}
         }, // This option accepts a callback function. The function will be called after the page moves.
         loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
@@ -25,21 +29,21 @@ $(function () {
         responsiveFallback: 1000, 
         direction: "vertical"            
     });
-     let wid=$('.slide-item')[0]
+     let wid=$('.swiper-slide')[0]
     $('.circle').find('a').each(function(index,item){
     	$(item).on('click',function(){
-    		wid=$('.slide-item')[$(item).index()]
-    		console.log($(this).index())
-    		$('.sldie-show').stop().animate({
-    			left:-($(wid).width()+20)*($(this).index())
+    		wid=$('.swiper-slide')[$(item).index()]
+    		console.log($(wid).width())
+    		$('.swiper-slide').stop().animate({
+    			left:-($(wid).width()-30)*($(this).index())
     		},1000)
     		$(this).addClass('on')
     		$(this).siblings().removeClass('on')
     	})
     })
+       
     
     //wx
-     $('')
      var $pop=$('#show')
     console.log( $('#wx').attr('data-wx'))
     $('#wx').click(function(){
@@ -67,7 +71,5 @@ $(function () {
     	  $('.title').text('')
        $('.content').text('')
     })
-    $('#next').click(function(){
-    	
-    })
+
 });
