@@ -19,6 +19,8 @@
 		<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
 		<!-- Custom stylesheet - for your changes-->
 		<link rel="stylesheet" href="css/custom.css">
+		<!--swiper-->
+		 <link rel="stylesheet " href="css/swiper.min.css " />
 		<!-- Tweaks for older IEs-->
 		<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -45,63 +47,62 @@
 			<section class="bg-cover bg-center hero section" data-index="1" style="position: absolute; top: 0%; left: 0px;">
 				<div class="dark-overlay"></div>
 				<div class="position-relative z-index-1">
-					<div class=""><img src="img/IMG_20191124_190523.jpg" alt="..." class="img-fluid rounded-circle d-block mx-auto" style="margin:0 auto; width:50%; height:50%;"></div>
+					<div class=""><img src="img/IMG_20191124_190523.jpg" alt="..." id="img" class="img-fluid rounded-circle d-block mx-auto" style="margin:0 auto; width:50%; height:50%;"></div>
 					<div class="container text-center text-white">
-						<p class="font-italic lead">善于做生活中的领跑者;做事业中的创新者</p>
 						<h1 class="text-uppercase my-4" style="font-family:cursive;">高子帆</h1>
 						<p class="font-italic lead">Web前端开发工程师</p>
 					</div>
 				</div>
 			</section>
-			<section class="bg-gray section" data-index="2" style="position: absolute; top: 200%; left: 0px;">
+			<section class="bg-black section" data-index="2" style="position: absolute; top: 200%; left: 0px; background:#333;">
 				<div class="d-flex h-100 align-items-center">
 					<div class="container">
 						<header class="mb-5 text-center">
-							<h2 class="text-uppercase lined">
+							<h2 class="text-uppercase lined" style="color:white;">
 		  	 技能栈
 		  </h2>
 						</header>
 						<div class="row text-center">
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">DIV+CSS</h4>
+								<h4 class=" lined lined-compact color-white">H5+CSS3</h4>
 								<p class="text-mted lined0">
-									<span class="percent "></span><span class="percent-size">90%</span>
+									<span class="percent "></span><span class="percent-size">100%</span>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">Javascript</h4>
+								<h4 class=" lined lined-compact color-white">Javascript</h4>
 								<p class="text-mted lined1">
-									<span class="percent "></span><span class="percent-size">75%</span>
+									<span class="percent "></span><span class="percent-size">85%</span>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">Jquery</h4>
+								<h4 class=" lined lined-compact color-white">Jquery</h4>
 								<p class="text-mted lined2">
+									<span class="percent "></span><span class="percent-size">85%</span>
+								</p>
+							</div>
+							<div class="col-lg-4 col-md-6 mb-4">
+								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
+								<h4 class=" lined lined-compact color-white">Boostrap</h4>
+								<p class="text-mted lined3">
 									<span class="percent "></span><span class="percent-size">80%</span>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">Boostrap</h4>
-								<p class="text-mted lined3">
-									<span class="percent "></span><span class="percent-size">70%</span>
-								</p>
-							</div>
-							<div class="col-lg-4 col-md-6 mb-4">
-								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">VUE</h4>
+								<h4 class=" lined lined-compact color-white">VUE</h4>
 								<p class="text-mted lined4">
-									<span class="percent "></span><span class="percent-size">70%</span>
+									<span class="percent "></span><span class="percent-size">65%</span>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
-								<h4 class=" lined lined-compact">小程序</h4>
+								<h4 class=" lined lined-compact color-white">小程序</h4>
 								<p class="text-mted lined5">
-									<span class="percent "></span> <span class="percent-size">70%</span>
+									<span class="percent "></span> <span class="percent-size">68%</span>
 								</p>
 
 							</div>
@@ -109,7 +110,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="section" data-index="3" style="position: absolute; top: 300%; left: 0px; background-color: rgb(205, 190, 182)">
+
+			<section class="section" data-index="3" style="position: absolute; top: 300%; left: 0px; padding:0; background-color: rgb(205, 190, 182)">
 				<div class="d-flex align-items-center" style="padding-top:60px;">
 					<div class="container">
 						<header class="text-center mb-5" style="margin-bottom:30px;">
@@ -123,89 +125,248 @@
 								<a href="##"></a>
 								<a href="##"></a>
 							</div>
-							<ul class="sldie-show clearfix" style="padding:0;">
-								<li class="slide-item row">
-									<div class="col-lg-4 col-md-6 mb-4">
-										<a data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/jxjy.png" alt="景秀教育" class="img-fluid d-block mx-auto"></a>
-										<a href="https://gzf630.github.io/oneschool/" target="_blank" class="name-parent">
-											<span class="name" style="color:black;  font-weight:500; ">景秀教育</span>
-										</a>
+							<div class="content">		
+					<div class="produce">
+						<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+							<div class="swiper-wrapper" style="width:1140px;">
+								<div class="row swiper-slide" >
+									<div class="col-md-6 img">
+										<img src="img/yunqiushan.png">
 									</div>
-									<div class="col-lg-8">
-										<div class="cover">
-											<h2>景秀教育项目</h2>
-											<p>项目简介：<span>&nbsp;&nbsp;以教育为主的宣传网站。</span></p>
-											<p>项目特色:<span>&nbsp;&nbsp;该网站利用CSS3媒体查询结合JS动态交互技术，根据用户设备的分辨率大小网页布局结构自动匹配与适应。 由于没有利用大型插件（如bootStrap）、故网站代码非常的简洁与环保，是原生态响应式网站开发方式的经典之作！</span></p>
+									<div class="col-md-6 introduce">
+										<h3>云丘山</h3>
+										<a href="http://www.yunqiushan.cn/">网址：http://www.yunqiushan.cn/</a>
+										<div>
+											<h5>项目描述：</h5>
+											云丘山是山西一个旅游风景区的官网，网站主要是运用了div、css、jquery等相关技术，为了方便用户查找相关路线，我们主要运用了侧边导航固定，子导航根据scrollTop固定定位到顶部。为了增加用户的体验度，在网页上增加了焦点图片轮播，地图、天气等有关效果的插件。
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											1、负责网站的页面以及相关效果的实现。
+											2、为了优化页面响应速度，优化代码并保持良好的兼容性，提升界面的友好与易用。做了一些脱离文档流的定位效果。
+											3、主要运用jquery实现，侧边导航固定和自导航固定到顶部等相关技术。
 										</div>
 									</div>
-								</li>
-								<li class="slide-item row">
-									<div class="col-lg-4 col-md-6 mb-4">
-										<a data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/yunqiushan.png" alt="景秀教育" class="img-fluid d-block mx-auto"></a>
-										<a href="http://www.yunqiushan.cn/" target="_blank" class="name-parent">
-											<span class="name" style="color:black;  font-weight:500; ">云丘山</span>
-										</a>
+								</div>
+								<div class="row swiper-slide" style="width: 1140px; ">
+									<div class="col-md-6 img">
+										<img src="img/lhsg.png">
 									</div>
-									<div class="col-lg-8">
-										<div class="cover">
-											<h2>云丘山项目</h2>
-											<p>项目描述：<span>&nbsp;&nbsp;旅游类的景点网站</span></p>
-											<p>项目特色：<span>&nbsp;&nbsp;该项目使用的模块化开发，使用封装好的css极大的提高了项目的 代码简洁度，使用的css效果比较灵活，改善了用户体验。同时运用Slider轮播图插件以及一些js 效果，使得网站得以完美展现。</span></p>
+									<div class="col-md-6 introduce">
+										<h3>漯河时光</h3>
+										<a href="http://www.5shiguang.net/">网址：http://www.5shiguang.net/</a>
+										<div>
+											<h5>项目描述：</h5>
+											主要用的技术有bootstrap框架，animation动画特效，使网页能够在各种不同分辨率的设备上能够自适应，并兼容各大浏览器（移动端优先），增加了离线缓存，提高了用户体验度。
+										</div>
+										<div>
+											<h5>项目职责	：</h5>
+											1、利用特定框架完成特定效果，使用fullpage.js插件完成首页的轮播图、滚屏等。 
+											2、网页使用jQuery、css3动画完成页面的各种特效，增加用户体验 
+											3、测试页面，后期优化代码，解决部分用户体验的BUG。 
+											4、使用HTML5新增API、增加用户体验，如：离线缓存、本地存储等。 
+											5、grunt工具优化，如：图片、css、js等的压缩合并。 
+											6、适当的引入cdn。 
 										</div>
 									</div>
-								</li>
-								<li class="slide-item row">
-									<div class="col-lg-4 col-md-6 mb-4">
-										<a data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/lhsg.png" alt="景秀教育" class="img-fluid d-block mx-auto"></a>
-										<a href="http://www.5shiguang.net" target="_blank" class="name-parent">
-											<span class="name" style="color:black;  font-weight:500; ">漯河时光</span>
-										</a>
+								</div>
+								<div class="row swiper-slide swiper-slide-prev" style="width: 1140px; ">
+									<div class="col-md-6 img">
+										<img src="img/wkjy.png">
 									</div>
-									<div class="col-lg-8">
-										<div class="cover">
-											<h2>漯河时光项目</h2>
-											<p>项目描述：<span>&nbsp;&nbsp;是针对政府机构、大中小企业提供信息化管理的咨询、实施、培训、服务为一体的企业管理信息化的高新技术企业。</span></p>
-											<p>项目特色：<span>&nbsp;&nbsp;这个项目就是经典的使用BootStrap写的响应式网站以及Less预处理语言控制网页样式， 鼠标经过的动画使用css产生了视觉动感，提高了用户视觉体验..</span></p>
-											
+									<div class="col-md-6 introduce">
+										<h3>悟空智慧教育</h3>
+										<a href="http://www.wukongone.com/">网址：http://www.wukongone.com</a>
+										<div>
+											<h5>项目描述：</h5>
+											悟空智慧教育是一家关于网上教育平台。app方向主要是由MUI框架进行开发的，主要使用mui的模板功能以及接口页面间的通信来完成开发。多处样式相同的模块采用封装css的方式，杜绝了代码的浪费，提高了加载速度，增强了用户体验度。
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											pc端：1、主要负责产品Web页面的开发和维护。
+											2、应用html5、css3、BootStrap框架等Web技术完成产品界面的开发。
+											3、通过JQuery实现页面上的各种动态效果，根据ajax实现数据的请求。
+											4、根据客户反馈，及时修改bug。
+											5、并且UI设计师和后台及时沟通产品需求，确保高效开发利于维护的网站。
+											<!--APP：1、主要负责运用MUI框架进行首页以及子页面的开发。
+											2、通过webview的方式进行子页加载节省页面响应时间。运用预加载，上拉下拉的方式有效的提高页面响应速度。
+											3、图片预览功能，懒加载功能，跳转详情页的时候dom结构做好缓存。
+											微信小程序：1、负责页面的开发，主要运用模板，组件，插槽进行页面间的互相通信。
+											2、通过与后台的技术沟通实现数据渲染等。
+											3、通过封装css库、弹框、loading动画等效果让代码更加简洁。-->
 										</div>
 									</div>
-								</li>
-								<li class="slide-item row">
-									<div class="col-lg-4 col-md-6 mb-4">
-										<a data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/wkjy.png" alt="景秀教育" class="img-fluid d-block mx-auto"></a>
-										<a href="http://www.wukongone.com" target="_blank" class="name-parent">
-											<span class="name" style="color:black;  font-weight:500; ">悟空教育</span>
-										</a>
+								</div>
+								<div class="row swiper-slide swiper-slide-active" style="width: 1140px; ">
+									<div class="col-md-6 img">
+										<img src="img/jxjy.png">
 									</div>
-									<div class="col-lg-8">
-										<div class="cover">
-											<h2>悟空教育项目</h2>
-											<p>项目描述：<span>&nbsp;&nbsp;It教育类网站</span></p>
-											<p>项目描述：<span>&nbsp;&nbsp;网站运用了boostrap框架，根据用户设备的分辨率大小网页布局结构自动匹配与适应。网站内大量运用</span></p>
+									<div class="col-md-6 introduce">
+										<h3>景秀教育官网</h3>
+										<a href="http://www.zgcxueyuan.com/">网址：http://www.zgcxueyuan.com</a>
+										<div>
+											<h5>项目介绍：</h5>
+											景秀教育是一家从事于IT培训的公司，网站主要利用原生响应式开发原理，采用html5、css3、jquery等技术，部分页面为提升用户的体验度运用了water fall和lazy loading等技术。运用media query语句使网站可以在pc端、paid端和手机端非常流畅的运行，m端时，支持触屏焦点图片轮播和折叠菜单等技术。以确保更好的用户体验。
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											1、该网站由个人独立开发。为保证搜索引擎优化，严格按照html5相关语义化标签进行编写和布局。 
+											2、由于想让网站快速加载，所以摒弃了javascript的编写语法，采用css3动画相关属性来实现网页上部分动画效果。 
+											3、折叠菜单，快速置顶、在线客服等均是由jquery手写方式进行开发，未采用任何插件。
 										</div>
 									</div>
-								</li>
-								<li class="slide-item row">
-									<div class="col-lg-4 col-md-6 mb-4">
-										<a data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/rhkj.png" alt="景秀教育" class="img-fluid d-block mx-auto"></a>
-										<a href="http://www.wukongone.com" target="_blank" class="name-parent">
-											<span class="name" style="color:black;  font-weight:500; ">日海科技</span>
-										</a>
+								</div>
+								<div class="row swiper-slide swiper-slide-active" style="width: 1140px; ">
+									<div class="col-md-6 img">
+										<img src="img/rhkj.png">
 									</div>
-									<div class="col-lg-8">
-										<div class="cover">
-											<h2>日海科技项目</h2>
-											<p>项目描述：<span>&nbsp;&nbsp;日海智能科技股份有限公司是一家高新技术企业，为国内外电信运营商、ICT设备商、系统集成商以及各行业客户提供包括终端、云平台、多行业解决方案在内的物联网端到端产品和服务，以及通信网络基础设施、设备和通信服务。</span></p>
-											<p>项目描述：<span>&nbsp;&nbsp;网站大量使用了swiper插件完成轮播图效果，引用lightbox点击查看效果，jq实现鼠标经过切换效果。</span></p>
+									<div class="col-md-6 introduce">
+										<h3>日海科技</h3>
+										<a href="http://www.sunseagroup.com/index.html">网址：http://www.sunseagroup.com/index.html</a>
+										<div>
+											<h5>项目介绍：</h5>
+											日海智能科技股份有限公司，日海智能为国内外电信运营商、ICT设备商、系统集成商以及各行业客户提供包括终端、云平台、多行业解决方案在内的物联网端到端产品和服务，以及通信网络基础设施、设备和通信服务.网站主要利用原生响应式开发原理，采用html5、css3、jquery等技术。
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											 1.页面中利用swiper插件实现轮播图效果，企业荣誉利用lightbox实现点击查看效果。
+										     2.导航鼠标经过hover效果与显示隐藏，新闻列表鼠标hover切换，多个页面鼠标经过动画。
+										     3.解决单个页面多次引用swiper引发的pagination(页码)不显示问题。
 										</div>
 									</div>
-								</li>
-							</ul>
+								</div>
+								
+							</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						</div>
+				</div>
+
 						</div>
 					</div>
 				</div>
 
 			</section>
+			<!--<<section class="section" data-index="3" style="position: absolute; top: 300%; left: 0px; background-color: rgb(205, 190, 182)">
+				<div class="d-flex align-items-center" style="padding-top:60px;">
+					<div class="container">
+						<header class="text-center mb-5" style="margin-bottom:30px;">
+							<h2 class="text-uppercase lined">作品展</h2>
+						</header>
+						<div class="content">		
+					<div class="produce">
+						<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+							<div class="swiper-wrapper" style="width:1140px;">
+								<div class="row swiper-slide" >
+									<div class="col-md-6 img">
+										<img src="img/yunqiushan.png">
+									</div>
+									<div class="col-md-6 introduce">
+										<h3>云丘山</h3>
+										<a href="http://www.yunqiushan.cn/">网址：http://www.yunqiushan.cn/</a>
+										<div>
+											<h5>项目描述：</h5>
+											云丘山是山西一个旅游风景区的官网，网站主要是运用了div、css、jquery等相关技术，为了方便用户查找相关路线，我们主要运用了侧边导航固定，子导航根据scrollTop固定定位到顶部。为了增加用户的体验度，在网页上增加了焦点图片轮播，地图、天气等有关效果的插件。
+										</div>
+										<div>
+											<h5>开发周期：</h5>
+											3个月
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											1、负责网站的页面以及相关效果的实现。
+											2、为了优化页面响应速度，优化代码并保持良好的兼容性，提升界面的友好与易用。做了一些脱离文档流的定位效果。
+											3、主要运用jquery实现，侧边导航固定和自导航固定到顶部等相关技术。
+										</div>
+									</div>
+								</div>
+								<div class="row swiper-slide" style="width: 1140px;">
+									<div class="col-md-6 img">
+										<img src="images/luohe.png">
+									</div>
+									<div class="col-md-6 introduce">
+										<h3>漯河时光</h3>
+										<a href="http://www.5shiguang.net/">网址：http://www.5shiguang.net/</a>
+										<div>
+											<h5>项目描述：</h5>
+											主要用的技术有bootstrap框架，animation动画特效，使网页能够在各种不同分辨率的设备上能够自适应，并兼容各大浏览器（移动端优先），增加了离线缓存，提高了用户体验度。
+										</div>
+										<div>
+											<h5>开发周期：</h5>
+											四个月
+										</div>
+										<div>
+											<h5>项目职责	：</h5>
+											1、利用特定框架完成特定效果，使用fullpage.js插件完成首页的轮播图、滚屏等。 
+											2、网页使用jQuery、css3动画完成页面的各种特效，增加用户体验 
+											3、测试页面，后期优化代码，解决部分用户体验的BUG。 
+											4、使用HTML5新增API、增加用户体验，如：离线缓存、本地存储等。 
+											5、grunt工具优化，如：图片、css、js等的压缩合并。 
+											6、适当的引入cdn。 
+										</div>
+									</div>
+								</div>
+								<div class="row swiper-slide swiper-slide-prev" style="width: 1140px;">
+									<div class="col-md-6 img">
+										<img src="images/wukong.png">
+									</div>
+									<div class="col-md-6 introduce">
+										<h3>悟空智慧教育</h3>
+										<a href="http://www.wukongone.com/">网址：http://www.wukongone.com</a>
+										<div>
+											<h5>项目描述：</h5>
+											悟空智慧教育是一家关于网上教育平台。app方向主要是由MUI框架进行开发的，主要使用mui的模板功能以及接口页面间的通信来完成开发。多处样式相同的模块采用封装css的方式，杜绝了代码的浪费，提高了加载速度，增强了用户体验度。
+										</div>
+										<div>
+											<h5>开发周期：</h5>
+											8个月
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											pc端：1、主要负责产品Web页面的开发和维护。
+											2、应用html5、css3、BootStrap框架等Web技术完成产品界面的开发。
+											3、通过JQuery实现页面上的各种动态效果，根据ajax实现数据的请求。
+											4、根据客户反馈，及时修改bug。
+											5、并且UI设计师和后台及时沟通产品需求，确保高效开发利于维护的网站。
+											APP：1、主要负责运用MUI框架进行首页以及子页面的开发。
+											2、通过webview的方式进行子页加载节省页面响应时间。运用预加载，上拉下拉的方式有效的提高页面响应速度。
+											3、图片预览功能，懒加载功能，跳转详情页的时候dom结构做好缓存。
+											微信小程序：1、负责页面的开发，主要运用模板，组件，插槽进行页面间的互相通信。
+											2、通过与后台的技术沟通实现数据渲染等。
+											3、通过封装css库、弹框、loading动画等效果让代码更加简洁。
+										</div>
+									</div>
+								</div>
+								<div class="row swiper-slide swiper-slide-active" style="width: 1140px;">
+									<div class="col-md-6 img">
+										<img src="images/jingxiu.png">
+									</div>
+									<div class="col-md-6 introduce">
+										<h3>景秀教育官网</h3>
+										<a href="http://www.zgcxueyuan.com/">网址：http://www.zgcxueyuan.com</a>
+										<div>
+											<h5>项目介绍：</h5>
+											景秀教育是一家从事于IT培训的公司，网站主要利用原生响应式开发原理，采用html5、css3、jquery等技术，部分页面为提升用户的体验度运用了water fall和lazy loading等技术。运用media query语句使网站可以在pc端、paid端和手机端非常流畅的运行，m端时，支持触屏焦点图片轮播和折叠菜单等技术。以确保更好的用户体验。
+										</div>
+										<div>
+											<h5>开发周期：</h5>
+												2个月
+										</div>
+										<div>
+											<h5>项目职责：</h5>
+											1、该网站由个人独立开发。为保证搜索引擎优化，严格按照html5相关语义化标签进行编写和布局。 
+											2、由于想让网站快速加载，所以摒弃了javascript的编写语法，采用css3动画相关属性来实现网页上部分动画效果。 
+											3、折叠菜单，快速置顶、在线客服等均是由jquery手写方式进行开发，未采用任何插件。
+										</div>
+									</div>
+								</div>
+							</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						<div class="swiper-button-next swiper-button" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
+						<div class="swiper-button-prev swiper-button" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+					</div>
+				</div>
+
+			</section>-->
 			<section class="section" data-index="4" style="position: absolute; top: 400%; left: 0px;">
 				<div class="d-flex h-100 align-items-center">
 					<div class="container">
@@ -227,7 +388,7 @@
 									<li class="list-inline-item" id="qq" data-qq="1368167593">
 										<a href="##" class="social-link social-link-qq "><i class="fab fa-qq"></i></a>
 									</li>
-									<li class="list-inline-item" id="phone" data-phone="13233637550" >
+									<li class="list-inline-item" id="phone" data-phone="13233637550">
 										<a href="##" class="social-link social-link-phone "><i class="fab fa-blender-phone"></i></a>
 									</li>
 									<li class="list-inline-item">
@@ -241,20 +402,23 @@
 				</div>
 			</section>
 
-		</div>
-		
-	<div style="width:100%; height:100vh;" class="pop-cover" id="show">
-			
-		<div class="pop-up box ">
-			<p class="text-center">
-				<img src="" class="wx"  style="display:none; border:none; width:200px; height:200px;"/>
-			  <span class="title"></span><span class="content"></span>
-			</p>
-		</div>
-	</div>
+			</div>
 
-		<!-- JavaScript files-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/jquery.onepage-scroll.min.js"></script>
-		<script src="js/front.js"></script>
+			<div style="width:100%; height:100vh;" class="pop-cover" id="show">
+
+				<div class="pop-up box ">
+					<p class="text-center">
+						<img src="" class="wx" style="display:none; border:none; width:200px; height:200px;" />
+						<span class="title"></span><span class="content"></span>
+					</p>
+				</div>
+			</div>
+</body>
+            <script src="js/jquery-1.11.3.js"></script>
+             <!--swiper-->
+             <script src="js/swiper.min.js "></script>
+			<!-- JavaScript files-->
+			<script src="js/bootstrap.bundle.min.js"></script>
+			<script src="js/jquery.onepage-scroll.min.js"></script>
+			<script src="js/front.js"></script>
+		
