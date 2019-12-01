@@ -101,6 +101,12 @@ section {
 .bg-gray {
   background: #eee !important;
 }
+.bg-black {
+  background:#333;
+}
+.color-white{
+	color:#F8F9FA;
+}
 
 .text-gray {
   color: #999 !important;
@@ -149,7 +155,7 @@ section {
   width: 6.25rem;
   height: 1px;
   margin: 1.25rem auto;
-  background: #4fbfa8;
+  background: #FFFFEE;
 }
 
 .lined-compact::after {
@@ -2049,7 +2055,7 @@ ul,li{
    position:relative;
 }
 .text-mted .percent{
-	display:block; height:18px; background:red;
+	display:block; height:18px; background:#FFFFEE;
   border-radius:5px;
    width:0%;
 }
@@ -2076,13 +2082,13 @@ ul,li{
 	right:50%;
 	top:50%;
 	transform:translateY(-50%);
-	color:white;
+	color:#000000;
 	font-size:14px;
 }
 
 @keyframes skillH0{
 	from{width:0%;}
-	to{width:90%;}
+	to{width:100%;}
 }
 @keyframes skillH1{
 	from{width:0%;}
@@ -2090,19 +2096,19 @@ ul,li{
 }
 @keyframes skillH2{
 	from{width:0%;}
-	to{width:90%;}
+	to{width:85%;}
 }
 @keyframes skillH3{
 	from{width:0%;}
-	to{width:70%;}
+	to{width:80%;}
 }
 @keyframes skillH4{
 	from{width:0%;}
-	to{width:70%;}
+	to{width:65%;}
 }
 @keyframes skillH5{
 	from{width:0%;}
-	to{width:70%;}
+	to{width:65%;}
 }
 
 span.name{
@@ -2111,16 +2117,18 @@ span.name{
 	line-height:21px;
 	height:21px;
 }
-
+.fa-lightbulb:before{
+	color:white;
+}
 .slide{
-	overflow:hidden;
+	/*overflow:hidden;*/
 	position:relative;
 	height:350px;
 
 }
 .circle{
 	position:absolute;
-	bottom:0px;
+	bottom:-100px;
 	left:50%;
 	transform:translateY(-50%);
 	z-index:999;
@@ -2193,19 +2201,20 @@ span.name{
 body{
 	position:relative;
 }
+.img{
+	height:370px;
+}
+.img img{
+	display:block;
+	width:100%;
+	height:100%;
+}
 
-.text-mted .percent.animations1{
-	background:#E0A55A;
+#img{
+	border:2px solid #fff;
 }
-.text-mted .percent.animations2{
-	background:#E0A55A;
+
+.onepage-pagination li a.white:before{
+	background: rgba(255, 255, 255)
 }
-.text-mted .percent.animations3{
-	background:#84B19A;
-}
-.text-mted .percent.animations4{
-	background:#84B19A;
-}
-.text-mted .percent.animations5{
-	background:#84B19A;
-}
+
